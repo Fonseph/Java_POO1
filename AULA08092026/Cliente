@@ -1,0 +1,79 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package aula0809;
+
+/**
+ *
+ * @author ifsp
+ *///todos os atributos das classes estar�o privados
+//teremos tambem metodos para salvar e outro para pegar
+public class Cliente {
+    private int codigo;
+    private String nome;
+    private endereco endereco;
+    //private String endereco;// o endereco eh um tipo multi valorado rua descricao numero bairro....muitas 
+    // informacoes em uma unica string,dessa forma nao consigo buscar algum tipo de informacao especifica
+    //dessa forma preciso quebrar em varios
+   /*private String rua;
+   private String numero;
+   private String bairro;*/
+   //depois de declarar eu vejo que nao faz sentido deixar esssas informa��es aqui
+    // por esse motivo que vamos criar uma classe nova chamada endereco
+     
+   /* public void setCodigo (int codigo)
+{
+
+this.codigo = codigo;//this usa para referenciar ele mesmo
+
+}
+    public int getCodigo()
+    {
+    
+    return codigo;
+    }
+    
+    
+    public void setNome (String nome){
+        
+        this.nome = nome;
+    }
+    
+    public String getNome()
+    {
+    
+    return nome;
+    
+    }*/
+
+    public int getCodigo() {// gerar automaticamente -> alt + insert - get and setter 
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    // pensando agora em salvar o endereco do cliente
+
+    public endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(endereco endereco) {
+        this.endereco = endereco;
+    }
+    
+   
+}
+
+
